@@ -12,7 +12,7 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="../public/css/profile.css" />
+    <link rel="stylesheet" href="../css/profile.css" />
     <title>Profile</title>
   </head>
   <body>
@@ -164,13 +164,8 @@
                     </div>
 
                     <div
-                      class="shadow-lg border-2"
-                      style="
-                        /* width: 300px; */
-                        height: 85px;
-                        border-radius: 12px;
-                        padding: 6px;
-                      "
+                      class="shadow-sm border-2"
+                      style="height: 85px; border-radius: 12px; padding: 6px"
                     >
                       <div
                         class="shadow-lg border-3"
@@ -224,7 +219,6 @@
                         height: 50px;
                         background: rgb(204, 199, 181);
                         display: flex;
-
                         align-items: center;
                         justify-content: center;
                       "
@@ -446,8 +440,80 @@
               </div>
             </div>
           </div>
-          <div class="col h-100 second-container" style="border: 2px solid red">
+          <div class="col h-100 second-container">
             <h3 class="fs-5">Attendance</h3>
+            <div
+              class="shadow-lg card"
+              style="border-radius: 16px; padding: 10px; margin-bottom: 20px"
+            >
+              <div class="attendance-stats" style="margin-bottom: 20px">
+                <div
+                  style="
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                  "
+                >
+                  <div
+                    style="display: flex; align-items: center; column-gap: 15px"
+                  >
+                    <img
+                      src="../images/user-profile-image.jpg"
+                      style="width: 50px; height: 50px; border-radius: 50%"
+                      alt=""
+                      srcset=""
+                    />
+                    <p style="font-weight: 500">John Smith</p>
+                  </div>
+
+                  <div style="display: flex; column-gap: 10px">
+                    <button class="bttn shadow-sm bg-warning fs-2">+</button>
+                    <button class="bttn shadow-sm fs-2">-</button>
+                  </div>
+                </div>
+              </div>
+              <div class="attendance-stats">
+                <div
+                  style="
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                  "
+                >
+                  <div
+                    style="display: flex; align-items: center; column-gap: 15px"
+                  >
+                    <img
+                      src="../images/worker.jpg"
+                      style="width: 50px; height: 50px; border-radius: 50%"
+                      alt=""
+                      srcset=""
+                    />
+                    <p style="font-weight: 500">Mary Doe</p>
+                  </div>
+
+                  <div style="display: flex; column-gap: 10px">
+                    <button class="bttn shadow-sm bg-warning fs-2">+</button>
+                    <button class="bttn shadow-sm fs-2">-</button>
+                  </div>
+                </div>
+              </div>
+              <button
+                class="shadow-lg"
+                style="
+                  margin-top: 12px;
+                  width: 100px;
+                  padding: 5px 0;
+                  border: 1px solid;
+                  border-radius: 20px;
+                  background: white;
+                  font-weight: 500;
+                "
+              >
+                View
+              </button>
+            </div>
+            <h3 class="fs-5">Colleagues</h3>
             <div
               class="shadow-lg card"
               style="
@@ -457,9 +523,92 @@
                 margin-bottom: 20px;
               "
             >
-              <div class="attendance-stats">
-                <div><image /></div>
+              <div class="attendance-stats" style="margin-bottom: 20px">
+                <div
+                  style="
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                  "
+                >
+                  <div
+                    style="display: flex; align-items: center; column-gap: 15px"
+                  >
+                    <img
+                      src="../images/user-profile-image.jpg"
+                      style="width: 50px; height: 50px; border-radius: 50%"
+                      alt=""
+                      srcset=""
+                    />
+                    <p style="font-weight: 500">John Smith</p>
+                  </div>
+
+                  <button
+                    class="shadow-lg"
+                    style="
+                      margin-top: 12px;
+                      width: 100px;
+                      padding: 5px 0;
+                      border: 1px solid;
+                      border-radius: 20px;
+                      background: white;
+                      font-weight: 500;
+                    "
+                  >
+                    Profile
+                  </button>
+                </div>
               </div>
+              <div class="attendance-stats">
+                <div
+                  style="
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                  "
+                >
+                  <div
+                    style="display: flex; align-items: center; column-gap: 15px"
+                  >
+                    <img
+                      src="../images/worker.jpg"
+                      style="width: 50px; height: 50px; border-radius: 50%"
+                      alt=""
+                      srcset=""
+                    />
+                    <p style="font-weight: 500">Mary Smith</p>
+                  </div>
+
+                  <button
+                    class="shadow-lg"
+                    style="
+                      margin-top: 12px;
+                      width: 100px;
+                      padding: 5px 0;
+                      border: 1px solid;
+                      border-radius: 20px;
+                      background: white;
+                      font-weight: 500;
+                    "
+                  >
+                    Profile
+                  </button>
+                </div>
+              </div>
+              <button
+                class="shadow-lg"
+                style="
+                  margin-top: 12px;
+                  width: 100px;
+                  padding: 5px 0;
+                  border: 1px solid;
+                  border-radius: 20px;
+                  background: white;
+                  font-weight: 500;
+                "
+              >
+                View all
+              </button>
             </div>
           </div>
         </div>
