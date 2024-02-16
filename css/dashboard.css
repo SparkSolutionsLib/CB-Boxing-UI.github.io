@@ -12,3 +12,18 @@
   bottom: 0;
   z-index: 1000;
 }
+
+.form-control {
+  border: none !important;
+}
+
+.rounded-with-icon {
+  border-radius: 30px;
+  padding-left: 40px;
+}
+
+.profile-pic {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
