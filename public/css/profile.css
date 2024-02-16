@@ -1,0 +1,38 @@
+.side-nav {
+  background: rgb(245, 241, 241);
+}
+
+.main-container {
+  display: flex;
+}
+
+.circular-image {
+  width: 100%;
+  height: 100%;
+  background-image: url(../images/circle.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.first-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.first-container .custom-row {
+  margin-top: 10px;
+}
+
+.first-container .svg-c {
+  display: flex;
+  align-items: center;
+}
+
+.second-container {
+  border: 2px solid red;
+  padding: 10px;
+}
+
+.second-container .attendance-stats {
+}
