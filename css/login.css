@@ -1,57 +1,42 @@
-*{
-    padding :0;
-    margin:0;
-    box-sizing:border-box;
-  }
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 
-  body{
-    background-color:rgb(220, 240, 248);
-  }
+.row {
+  height: 100vh;
+}
 
-  .logo-section{
-    background:skyblue;
-     
-  }
-  .img-fluid{
-    width:250px;
+.logo-section {
+  background: #3091b8;
+}
 
-  }
+.img-fluid {
+  width: 250px;
+}
 
-  .post-content{
-    text-align: center;
-    font-weight:bold;
-    font-size: larger;
+.post-content {
+  text-align: center;
+  font-weight: bold;
+  font-size: larger;
+}
 
-  }
+h4 {
+  text-align: center;
+  margin-top: 15px;
+}
 
-  .form-section{
-    background-color: white;
-  }
-  h4{
-    text-align:center;
-    margin-top:15px;
-  }
+.btn {
+  border-radius: 25px !important;
+}
 
-  .form-row{
-    margin-left: 250px;
-    align-items: center;
-    padding-top: 50px;
-    margin-top: 50px;
-  }
-  .reset-password {
-    text-align:center;
-  }
+.btn:hover {
+  background-color: #3091b8;
+  color: #f1f1f1;
+}
 
-  .btn1{
-        box-shadow: 15px;
-        outline:none;
-        height:80px;
-        width:100%;
-        background-color: white;
-        border-radius: 25px;
-        font-weight:15px;
-
-  }
-  .btn1:hover{
-    background-color: skyblue;
-  }
+.form-control {
+  border-radius: 25px;
+  border: none !important;
+}
