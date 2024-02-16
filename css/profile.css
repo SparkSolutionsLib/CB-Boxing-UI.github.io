@@ -34,6 +34,8 @@
 }
 
 .second-container .attendance-stats {
+  border-bottom: 1px solid;
+  padding-bottom: 12px;
 }
 
 .second-container .attendance-stats .bttn {
