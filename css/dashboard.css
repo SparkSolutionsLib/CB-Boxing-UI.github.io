@@ -1,0 +1,14 @@
+:root {
+  --light-gray: #eeeeee;
+}
+
+.bg-secondary {
+  background-color: var(--light-gray) !important;
+}
+
+.h-fixed {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  z-index: 1000;
+}
