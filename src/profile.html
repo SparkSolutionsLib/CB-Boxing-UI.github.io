@@ -12,16 +12,105 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
+    <!-- Custom styling -->
     <link rel="stylesheet" href="../css/profile.css" />
     <title>Profile</title>
   </head>
   <body>
-    <main class="main-container h-100">
-      <!--Sidebar starts -->
-      <div
-        class="d-flex flex-column flex-shrink-0 side-nav"
-        style="width: 4.5rem; margin-right: 2rem"
+    <!-- <nav
+      class="d-flex flex-column flex-shrink-0 bg-secondary h-fixed gap-4"
+      style="width: 4.5rem"
+    >
+      <a
+        href="#"
+        class="d-block p-3 link-dark text-decoration-none mt-4"
+        title=""
+        data-bs-toggle="tooltip"
+        data-bs-placement="right"
+        data-bs-original-title="Icon-only"
       >
+        <img class="bi" src="../images/logo.png" width="40" />
+        <span class="visually-hidden">Icon-only</span>
+      </a>
+      <ul class="nav nav-pills nav-flush flex-column mb-auto text-center">
+        <li class="nav-item">
+          <a
+            href="#"
+            class="nav-link link-dark py-3 fs-3"
+            aria-current="page"
+            title=""
+            data-bs-toggle="tooltip"
+            data-bs-placement="right"
+            data-bs-original-title="Home"
+          >
+            <i
+              class="fa-solid fa-user"
+              width="30"
+              height="30"
+              aria-label="Home"
+              role="img"
+            ></i>
+          </a>
+        </li>
+        <li>
+          <a
+            href="#"
+            class="nav-link link-dark py-3"
+            title=""
+            data-bs-toggle="tooltip"
+            data-bs-placement="right"
+            data-bs-original-title="Dashboard"
+          >
+            <i
+              class="fa-brands fa-r-project"
+              width="24"
+              height="24"
+              role="img"
+              aria-label="Dashboard"
+            ></i>
+          </a>
+        </li>
+        <li>
+          <a
+            href="#"
+            class="nav-link link-dark py-3"
+            title=""
+            data-bs-toggle="tooltip"
+            data-bs-placement="right"
+            data-bs-original-title="Orders"
+          >
+            <i
+              class="fa-solid fa-users"
+              width="24"
+              height="24"
+              role="img"
+              aria-label="Orders"
+            ></i>
+          </a>
+        </li>
+        <li>
+          <a
+            href="#"
+            class="nav-link link-dark py-3"
+            title=""
+            data-bs-toggle="tooltip"
+            data-bs-placement="right"
+            data-bs-original-title="Products"
+          >
+            <i
+              class="fa-solid fa-calendar"
+              width="24"
+              height="24"
+              role="img"
+              aria-label="Products"
+            ></i>
+          </a>
+        </li>
+      </ul>
+    </nav> -->
+    <main class="main-container h-100">
+      <!-- side-nav starts -->
+      <nav class="side-nav d-flex flex-column flex-shrink-0">
         <ul
           class="nav nav-pills nav-flush flex-column mb-auto text-center"
           style="margin-top: 55px"
@@ -116,43 +205,25 @@
           </li>
           <!-- mutiple_user icon end -->
         </ul>
-      </div>
+      </nav>
       <!--Sidebar end -->
 
       <div class="container-fluid">
         <div class="row h-100">
-          <div
-            class="col h-100 first-container"
-            style="
-              height: 100%;
-              display: flex;
-              flex-direction: column;
-              row-gap: 7px;
-              margin-bottom: 20px;
-            "
-          >
+          <div class="col h-100 first-container">
             <div class="row custom-row">
-              <div class="col" style="display: flex">
-                <div
-                  class="circular-image"
-                  style="
-                    width: 120px;
-                    height: 120px;
-                    border-radius: 50%;
-                    margin-right: 25px;
-                  "
-                ></div>
-                <div
-                  class="employee-div"
-                  style="display: flex; align-items: center"
-                >
-                  <div style="display: flex; flex-direction: column">
+              <div class="col d-flex">
+                <div class="circular-image"></div>
+                <div class="employee-div">
+                  <div>
                     <h2>Employee Profile</h2>
-                    <div class="svg-c">
+                    <div
+                      class="d-flex align-items-center justify-content-start"
+                      style="column-gap: 7px"
+                    >
                       <svg
-                        width="20"
-                        height="20"
-                        style="vertical-align: middle"
+                        width="18"
+                        height="18"
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 448 512"
                       >
@@ -160,43 +231,28 @@
                           d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512H418.3c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304H178.3z"
                         />
                       </svg>
-                      <p style="font-size: 14px; font-weight: 500">John Doe</p>
+                      <span class="fs-6" style="font-weight: 500"
+                        >John Doe</span
+                      >
                     </div>
 
-                    <div
-                      class="shadow-sm border-2"
-                      style="height: 85px; border-radius: 12px; padding: 6px"
-                    >
+                    <div class="shadow-sm border-2 employee-stats mt-3">
                       <div
-                        class="shadow-lg border-3"
-                        style="
-                          width: 100%;
-                          height: 100%;
-                          border-radius: 12px;
-                          display: flex;
-                          align-items: center;
-                          justify-content: center;
-                          column-gap: 20px;
-                          padding: 10px;
-                        "
+                        class="shadow-lg border-3 st d-flex align-items-center justify-content-center"
                       >
                         <div>
-                          <h3 class="fs-5 text-center">Today</h3>
-                          <p class="fw-bold" style="font-size: 13px">
-                            8:00 AM - 5:00
-                          </p>
+                          <h3 class="fs-5 text-center mt-2">Today</h3>
+                          <p>8:00 AM - 5:00</p>
                         </div>
 
                         <div>
-                          <h3 class="fs-5 text-center">2</h3>
-                          <p class="fw-bold" style="font-size: 13px">8 hours</p>
+                          <h3 class="fs-5 text-center mt-2">2</h3>
+                          <p>8 hours</p>
                         </div>
                         <div>
-                          <h3 class="fs-5 text-center">Leave</h3>
+                          <h3 class="fs-5 text-center mt-2">Leave</h3>
 
-                          <p class="fw-bold" style="font-size: 13px">
-                            No pending
-                          </p>
+                          <p>No pending</p>
                         </div>
                       </div>
                     </div>
