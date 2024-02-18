@@ -65,8 +65,7 @@ body {
 }
 
 .second-container .attendance-stats {
-  border-bottom: 1px solid;
-  padding-bottom: 12px;
+  /* border: 2px solid red; */
 }
 
 .second-container .attendance-stats .bttn {

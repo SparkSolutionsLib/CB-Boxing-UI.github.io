@@ -368,18 +368,15 @@
                   style="
                     border-radius: 16px;
                     padding: 10px;
-
                     margin-bottom: 20px;
                   "
                 >
-                  <div class="" style="display: flex; column-gap: 20px">
+                  <div class="d-flex" style="display: flex; column-gap: 20px">
                     <div
+                      class="d-flex align-items-center justify-content-center"
                       style="
                         height: 100px;
                         width: 130px;
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
                         background: rgb(204, 199, 181);
                       "
                     >
@@ -430,14 +427,12 @@
                   class="shadow-lg card"
                   style="border-radius: 16px; padding: 10px"
                 >
-                  <div class="" style="display: flex; column-gap: 20px">
+                  <div class="d-flex" style="column-gap: 20px">
                     <div
+                      class="d-flex align-items-center justify-content-center"
                       style="
                         height: 100px;
                         width: 130px;
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
                         background: rgb(204, 199, 181);
                       "
                     >
@@ -455,11 +450,7 @@
                     </div>
                     <div style="width: 100%">
                       <div
-                        style="
-                          display: flex;
-                          align-items: center;
-                          justify-content: space-between;
-                        "
+                        class="d-flex align-items-center justify-content-between"
                       >
                         <h3 class="fs-5">Points</h3>
                         <p>2500/3000</p>
@@ -491,6 +482,68 @@
             <h3 class="fs-5">Attendance</h3>
             <div
               class="shadow-lg card"
+              style="border-radius: 16px; padding: 10px; margin-bottom: 40px"
+            >
+              <div class="attendance-stats">
+                <div class="d-flex align-items-center justify-content-between">
+                  <div
+                    class="d-flex align-items-center"
+                    style="column-gap: 15px"
+                  >
+                    <img
+                      src="../images/user-profile-image.jpg"
+                      style="width: 50px; height: 50px; border-radius: 50%"
+                      alt=""
+                    />
+                    <p style="font-weight: 500">John Smith</p>
+                  </div>
+
+                  <div class="d-flex" style="column-gap: 10px">
+                    <button class="bttn shadow-sm bg-warning fs-2">+</button>
+                    <button class="bttn shadow-sm fs-2">-</button>
+                  </div>
+                </div>
+                <hr class="mx-4" style="border: 1px grey solid" />
+              </div>
+              <div class="attendance-stats">
+                <div class="d-flex align-items-center justify-content-between">
+                  <div
+                    class="d-flex align-items-center"
+                    style="column-gap: 15px"
+                  >
+                    <img
+                      src="../images/user-profile-image.jpg"
+                      style="width: 50px; height: 50px; border-radius: 50%"
+                      alt=""
+                    />
+                    <p style="font-weight: 500">John Smith</p>
+                  </div>
+
+                  <div class="d-flex" style="column-gap: 10px">
+                    <button class="bttn shadow-sm bg-warning fs-2">+</button>
+                    <button class="bttn shadow-sm fs-2">-</button>
+                  </div>
+                </div>
+                <hr class="mx-4" style="border: 1px grey solid" />
+              </div>
+              <button
+                class="shadow-sm"
+                style="
+                  margin-top: 12px;
+                  width: 100px;
+                  padding: 5px 0;
+                  border: 1px solid grey;
+                  border-radius: 20px;
+                  background: white;
+                  font-weight: 500;
+                "
+              >
+                View All
+              </button>
+            </div>
+            <h3 class="fs-5">Colleagues</h3>
+            <div
+              class="shadow-lg card"
               style="border-radius: 16px; padding: 10px; margin-bottom: 20px"
             >
               <div class="attendance-stats" style="margin-bottom: 20px">
@@ -513,90 +566,13 @@
                     <p style="font-weight: 500">John Smith</p>
                   </div>
 
-                  <div style="display: flex; column-gap: 10px">
-                    <button class="bttn shadow-sm bg-warning fs-2">+</button>
-                    <button class="bttn shadow-sm fs-2">-</button>
-                  </div>
-                </div>
-              </div>
-              <div class="attendance-stats">
-                <div
-                  style="
-                    display: flex;
-                    align-items: center;
-                    justify-content: space-between;
-                  "
-                >
-                  <div
-                    style="display: flex; align-items: center; column-gap: 15px"
-                  >
-                    <img
-                      src="../images/worker.jpg"
-                      style="width: 50px; height: 50px; border-radius: 50%"
-                      alt=""
-                      srcset=""
-                    />
-                    <p style="font-weight: 500">Mary Doe</p>
-                  </div>
-
-                  <div style="display: flex; column-gap: 10px">
-                    <button class="bttn shadow-sm bg-warning fs-2">+</button>
-                    <button class="bttn shadow-sm fs-2">-</button>
-                  </div>
-                </div>
-              </div>
-              <button
-                class="shadow-lg"
-                style="
-                  margin-top: 12px;
-                  width: 100px;
-                  padding: 5px 0;
-                  border: 1px solid;
-                  border-radius: 20px;
-                  background: white;
-                  font-weight: 500;
-                "
-              >
-                View
-              </button>
-            </div>
-            <h3 class="fs-5">Colleagues</h3>
-            <div
-              class="shadow-lg card"
-              style="
-                border-radius: 16px;
-                padding: 10px;
-
-                margin-bottom: 20px;
-              "
-            >
-              <div class="attendance-stats" style="margin-bottom: 20px">
-                <div
-                  style="
-                    display: flex;
-                    align-items: center;
-                    justify-content: space-between;
-                  "
-                >
-                  <div
-                    style="display: flex; align-items: center; column-gap: 15px"
-                  >
-                    <img
-                      src="../images/user-profile-image.jpg"
-                      style="width: 50px; height: 50px; border-radius: 50%"
-                      alt=""
-                      srcset=""
-                    />
-                    <p style="font-weight: 500">John Smith</p>
-                  </div>
-
                   <button
-                    class="shadow-lg"
+                    class="shadow-sm"
                     style="
                       margin-top: 12px;
                       width: 100px;
                       padding: 5px 0;
-                      border: 1px solid;
+                      border: 1px solid grey;
                       border-radius: 20px;
                       background: white;
                       font-weight: 500;
@@ -605,6 +581,7 @@
                     Profile
                   </button>
                 </div>
+                <hr class="mx-4" style="border: 1px grey solid" />
               </div>
               <div class="attendance-stats">
                 <div
@@ -627,12 +604,12 @@
                   </div>
 
                   <button
-                    class="shadow-lg"
+                    class="shadow-sm"
                     style="
                       margin-top: 12px;
                       width: 100px;
                       padding: 5px 0;
-                      border: 1px solid;
+                      border: 1px solid grey;
                       border-radius: 20px;
                       background: white;
                       font-weight: 500;
@@ -641,31 +618,32 @@
                     Profile
                   </button>
                 </div>
+                <hr class="mx-4" style="border: 1px grey solid" />
               </div>
               <button
-                class="shadow-lg"
+                class="shadow-sm"
                 style="
                   margin-top: 12px;
                   width: 100px;
                   padding: 5px 0;
-                  border: 1px solid;
+                  border: 1px solid grey;
                   border-radius: 20px;
                   background: white;
                   font-weight: 500;
                 "
               >
-                View all
+                View All
               </button>
             </div>
 
             <div style="display: flex; align-items: center; column-gap: 12px">
               <button
-                class="shadow-lg"
+                class="shadow-sm"
                 style="
                   margin-top: 12px;
                   width: 45%;
                   padding: 5px 0;
-                  border: 1px solid;
+                  border: 2px solid grey;
                   border-radius: 20px;
                   background: white;
                   font-weight: 500;
@@ -679,7 +657,7 @@
                   margin-top: 12px;
                   width: 45%;
                   padding: 5px 0;
-                  border: 1px solid;
+                  border: 2px solid grey;
                   border-radius: 20px;
                   background: white;
                   font-weight: 500;
